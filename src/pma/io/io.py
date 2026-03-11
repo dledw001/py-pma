@@ -1,6 +1,6 @@
 import csv
 
-def load_weights(csv_filepath) -> dict[str, float]:
+def load_weights_csv(csv_filepath) -> dict[str, float]:
     totals_by_ticker = {}
 
     with open(csv_filepath, newline="") as csv_file:
