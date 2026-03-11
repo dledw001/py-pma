@@ -1,4 +1,5 @@
-from .active_share import compute_active_share, load_weights
+from .io import load_weights
+from .active_share import compute_active_share
 
 portfolio = load_weights("sample-data/portfolio.csv")
 model = load_weights("sample-data/model.csv")
