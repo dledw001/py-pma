@@ -51,16 +51,3 @@ def load_weights(csv_filepath) -> dict[str, float]:
         raise ValueError(f"{csv_filepath} total must be > 0")
 
     return {ticker: value / total_value for ticker, value in totals_by_ticker.items()}
-
-
-def main():
-    portfolio_weights = load_weights("portfolio.csv")
-    model_weights = load_weights("model.csv")
-
-    active_share = compute_active_share(portfolio_weights, model_weights)
-
-    print(active_share)
-
-
-if __name__ == "__main__":
-    main()
