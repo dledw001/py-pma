@@ -1,8 +1,8 @@
-from pma import load_weights, compute_active_share
+from pma import load_weights_csv, active_share
 
-portfolio = load_weights("sample-data/portfolio.csv")
-model = load_weights("sample-data/model.csv")
+portfolio = load_weights_csv("sample-data/portfolio.csv")
+model = load_weights_csv("sample-data/model.csv")
 
-active_share = compute_active_share(portfolio, model)
+active_share = active_share(portfolio, model)
 
 print(active_share)
