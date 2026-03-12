@@ -1,4 +1,10 @@
 # py-pma
+a python library for computing portfolio management analytics.
+
+## about
+
+### assumptions
+- currently, these functions assume long-only, normalized weights.
 
 ## usage
 
