@@ -1,5 +1,6 @@
 from .hhi import hhi
 
+
 def effective_n(portfolio_weights) -> float:
     """Return the effective number of holdings in a portfolio.
 
@@ -10,5 +11,5 @@ def effective_n(portfolio_weights) -> float:
     """
     hhi_value = hhi(portfolio_weights)
     effective_n = 1 / hhi_value
-    
+
     return effective_n

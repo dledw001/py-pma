@@ -6,10 +6,10 @@ from .holdings.top_n_weight import top_n_weight
 from .holdings.effective_n import effective_n
 
 __all__ = [
-        "active_share",
-        "load_weights_csv",
-        "hhi",
-        "max_weight",
-        "top_n_weight",
-        "effective_n",
+    "active_share",
+    "load_weights_csv",
+    "hhi",
+    "max_weight",
+    "top_n_weight",
+    "effective_n",
 ]
