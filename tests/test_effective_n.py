@@ -1,4 +1,5 @@
-from pma import effective_n, hhi
+import pytest
+from pma import effective_n
 
 
 def test_effective_n():
@@ -9,4 +10,4 @@ def test_effective_n():
     expected_hhi = 0.26
     expected_effective_n = 1.0 / expected_hhi
 
-    assert effective_n_value == expected_effective_n
+    assert effective_n_value == pytest.approx(expected_effective_n)
