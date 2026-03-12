@@ -1,5 +1,6 @@
 import csv
 
+
 def load_weights_csv(csv_filepath) -> dict[str, float]:
     totals_by_ticker = {}
 
