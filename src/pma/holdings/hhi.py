@@ -7,4 +7,5 @@ def hhi(portfolio_weights) -> float:
     This function assumes long-only normalized weights.
     """
     hhi = sum(weight * weight for weight in portfolio_weights.values())
+
     return hhi

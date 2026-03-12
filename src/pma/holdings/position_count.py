@@ -4,4 +4,5 @@ def position_count(portfolio_weights) -> int:
     This function assumes long-only normalized weights.
     """
     position_count = sum(1 for value in portfolio_weights.values() if value > 0)
+
     return position_count
