@@ -8,6 +8,7 @@ from .holdings.effective_n import effective_n
 from .holdings.position_count import position_count
 from .holdings.active_weights import active_weights
 from .holdings.off_benchmark_weight import off_benchmark_weight
+from .holdings.overlap_weight import overlap_weight
 
 __all__ = [
     "active_share",
@@ -20,4 +21,5 @@ __all__ = [
     "position_count",
     "active_weights",
     "off_benchmark_weight",
+    "overlap_weight",
 ]

@@ -1,8 +1,8 @@
-from pma import load_weights_csv, active_share
+from pma import load_weights_csv, overlap_weight
 
 portfolio = load_weights_csv("sample-data/portfolio.csv")
 benchmark = load_weights_csv("sample-data/benchmark.csv")
 
-result = active_share(portfolio, benchmark)
+result = overlap_weight(portfolio, benchmark)
 
 print(result)

@@ -4,8 +4,8 @@ def min_weight(portfolio_weights, include_zero_weights=False) -> float:
     This function assumes long-only normalized weights.
     """
     if include_zero_weights:
-        min_weight = min(portfolio_weights.values())
+        result = min(portfolio_weights.values())
     else:
-        min_weight = min(v for v in portfolio_weights.values() if v > 0.0)
+        result = min(v for v in portfolio_weights.values() if v > 0.0)
 
-    return min_weight
+    return result

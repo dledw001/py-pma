@@ -7,6 +7,6 @@ def top_n_weight(portfolio_weights, n) -> float:
     This function assumes long-only normalized weights.
     """
     sorted_weights = sorted(portfolio_weights.values(), reverse=True)
-    top_n_weight = sum(sorted_weights[:n])
+    result = sum(sorted_weights[:n])
 
-    return top_n_weight
+    return result

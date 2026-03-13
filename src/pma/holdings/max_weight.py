@@ -3,6 +3,6 @@ def max_weight(portfolio_weights) -> float:
 
     This function assumes long-only normalized weights.
     """
-    max_weight = max(portfolio_weights.values())
+    result = max(portfolio_weights.values())
 
-    return max_weight
+    return result

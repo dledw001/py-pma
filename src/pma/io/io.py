@@ -2,6 +2,11 @@ import csv
 
 
 def load_weights_csv(csv_filepath) -> dict[str, float]:
+    """Load ticker values from CSV and return normalized portfolio weights.
+
+    The CSV must contain ``INDEX`` and ``VALUE`` columns. Duplicate tickers
+    are aggregated before the final weights are normalized to sum to 1.0.
+    """
     totals_by_ticker = {}
 
     with open(csv_filepath, newline="") as csv_file:

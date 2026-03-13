@@ -10,6 +10,6 @@ def effective_n(portfolio_weights) -> float:
     This function assumes long-only normalized weights.
     """
     hhi_value = hhi(portfolio_weights)
-    effective_n = 1 / hhi_value
+    result = 1 / hhi_value
 
-    return effective_n
+    return result

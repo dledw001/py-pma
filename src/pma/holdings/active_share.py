@@ -6,9 +6,9 @@ def active_share(portfolio_weights, benchmark_weights) -> float:
 
     This function assumes long-only normalized weights.
     """
-    active_share = 0.5 * sum(
+    result = 0.5 * sum(
         abs(portfolio_weights.get(ticker, 0.0) - benchmark_weights.get(ticker, 0.0))
         for ticker in (set(portfolio_weights) | set(benchmark_weights))
     )
 
-    return active_share
+    return result
