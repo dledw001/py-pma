@@ -4,7 +4,7 @@ import csv
 def load_weights_csv(csv_filepath) -> dict[str, float]:
     """Load labeled values from CSV and return normalized weights.
 
-    The CSV must contain ``INDEX`` and ``VALUE`` columns. Duplicate labels
+    The CSV must contain ``LABEL`` and ``VALUE`` columns. Duplicate labels
     are aggregated before the final weights are normalized to sum to 1.0.
     """
     totals_by_ticker = {}
@@ -15,7 +15,7 @@ def load_weights_csv(csv_filepath) -> dict[str, float]:
         if reader.fieldnames is None:
             raise ValueError(f"{csv_filepath} is empty")
 
-        required_columns = {"INDEX", "VALUE"}
+        required_columns = {"LABEL", "VALUE"}
         missing_columns = required_columns - set(reader.fieldnames)
         if missing_columns:
             raise ValueError(
@@ -23,7 +23,7 @@ def load_weights_csv(csv_filepath) -> dict[str, float]:
             )
 
         for row in reader:
-            ticker = row["INDEX"]
+            ticker = row["LABEL"]
             raw_value = row["VALUE"]
 
             if ticker is None or raw_value is None:
@@ -54,7 +54,7 @@ def load_weights_csv(csv_filepath) -> dict[str, float]:
 def load_group_map_csv(csv_filepath) -> dict[str, str]:
     """Load label-to-group mappings from CSV.
 
-    The CSV must contain ``INDEX`` and ``GROUP`` columns. Duplicate labels
+    The CSV must contain ``LABEL`` and ``GROUP`` columns. Duplicate labels
     are not allowed because each label must map to a single group.
     """
     group_map = {}
@@ -65,7 +65,7 @@ def load_group_map_csv(csv_filepath) -> dict[str, str]:
         if reader.fieldnames is None:
             raise ValueError(f"{csv_filepath} is empty")
 
-        required_columns = {"INDEX", "GROUP"}
+        required_columns = {"LABEL", "GROUP"}
         missing_columns = required_columns - set(reader.fieldnames)
         if missing_columns:
             raise ValueError(
@@ -73,7 +73,7 @@ def load_group_map_csv(csv_filepath) -> dict[str, str]:
             )
 
         for row in reader:
-            label = row["INDEX"]
+            label = row["LABEL"]
             group = row["GROUP"]
 
             if label is None or group is None:

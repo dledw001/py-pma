@@ -1,5 +1,51 @@
-INDEX,GROUP
+LABEL,GROUP
 AAPL,Information Technology
 MSFT,Information Technology
+NVDA,Information Technology
 AMZN,Consumer Discretionary
+GOOGL,Communication Services
+META,Communication Services
+AVGO,Information Technology
+TSLA,Consumer Discretionary
+BRK.B,Financials
+JPM,Financials
+V,Financials
+LLY,Health Care
 XOM,Energy
+UNH,Health Care
+MA,Financials
+JNJ,Health Care
+HD,Consumer Discretionary
+PG,Consumer Staples
+COST,Consumer Staples
+ABBV,Health Care
+BAC,Financials
+CVX,Energy
+MRK,Health Care
+KO,Consumer Staples
+PEP,Consumer Staples
+WMT,Consumer Staples
+CSCO,Information Technology
+ADBE,Information Technology
+CRM,Information Technology
+AMD,Information Technology
+ACN,Information Technology
+MCD,Consumer Discretionary
+TMO,Health Care
+LIN,Materials
+NFLX,Communication Services
+ORCL,Information Technology
+ABT,Health Care
+DHR,Health Care
+TXN,Information Technology
+QCOM,Information Technology
+PM,Consumer Staples
+DIS,Communication Services
+IBM,Information Technology
+INTU,Information Technology
+NOW,Information Technology
+CAT,Industrials
+GE,Industrials
+ISRG,Health Care
+GS,Financials
+BKNG,Consumer Discretionary

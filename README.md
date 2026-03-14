@@ -6,7 +6,7 @@ A Python library for computing portfolio management analytics on normalized weig
 ### Assumptions
 - These functions assume long-only, normalized weights.
 - `load_weights_csv` accepts raw values or pre-scaled weights and normalizes them to sum to 1.0.
-- The core metrics operate on generic labeled weight mappings. In the common case, the labels are securities, but they can also be sectors, countries, industries, sleeves, or other buckets.
+- The core metrics operate on generic labeled weight mappings. In the common case, the labels are security identifiers, but they can also be sectors, countries, industries, sleeves, or other buckets.
 
 ## Usage
 
@@ -22,7 +22,7 @@ print(result)
 
 ## Grouping
 
-You can aggregate a security-level portfolio into groups and then reuse the same metrics at the grouped level.
+You can aggregate one labeled weight mapping into broader groups and then reuse the same metrics at the grouped level.
 
 ```python
 from pma import active_share, group_weights
