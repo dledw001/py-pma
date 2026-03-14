@@ -1,5 +1,5 @@
 def max_weight(portfolio_weights) -> float:
-    """Return the largest portfolio weight.
+    """Return the largest weight in a mapping.
 
     This function assumes long-only normalized weights.
     """

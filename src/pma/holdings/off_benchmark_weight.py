@@ -1,5 +1,5 @@
 def off_benchmark_weight(portfolio_weights, benchmark_weights) -> float:
-    """Return the total portfolio weight absent from the benchmark.
+    """Return the total weight absent from the benchmark mapping.
 
     This function assumes long-only normalized weights.
     """

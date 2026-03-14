@@ -1,8 +1,8 @@
 def hhi(portfolio_weights) -> float:
-    """Return the Herfindahl-Hirschman Index (HHI) for a portfolio.
+    """Return the Herfindahl-Hirschman Index (HHI) for a weight mapping.
 
-    HHI is defined as the sum of squared portfolio weights and is a
-    measure of portfolio concentration.
+    HHI is defined as the sum of squared weights and is a measure of
+    concentration.
 
     This function assumes long-only normalized weights.
     """

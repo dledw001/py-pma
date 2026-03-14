@@ -1,5 +1,5 @@
 def position_count(portfolio_weights) -> int:
-    """Return the number of holdings with strictly positive weight.
+    """Return the number of components with strictly positive weight.
 
     This function assumes long-only normalized weights.
     """

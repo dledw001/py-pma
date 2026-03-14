@@ -1,8 +1,9 @@
 def active_share(portfolio_weights, benchmark_weights) -> float:
-    """Return the active share between a portfolio and a benchmark.
+    """Return the active share between two weight mappings.
 
     Active share is defined as half the sum of absolute differences
-    between portfolio and benchmark weights across all securities.
+    between portfolio and benchmark weights across the union of both
+    mappings.
 
     This function assumes long-only normalized weights.
     """

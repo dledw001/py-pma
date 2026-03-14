@@ -1,8 +1,8 @@
 def active_weights(portfolio_weights, benchmark_weights) -> dict[str, float]:
-    """Return per-security active weights versus a benchmark.
+    """Return per-component active weights versus a benchmark.
 
     Active weight is defined as portfolio weight minus benchmark weight
-    for each security across the union of both universes.
+    for each label across the union of both mappings.
 
     This function assumes long-only normalized weights.
     """

@@ -1,8 +1,8 @@
 def overlap_weight(portfolio_weights, benchmark_weights) -> float:
-    """Return the overlapping weight shared with a benchmark.
+    """Return the overlapping weight shared by two mappings.
 
-    Overlap weight is defined as the sum of the smaller portfolio and
-    benchmark weights for each security held in both universes.
+    Overlap weight is defined as the sum of the smaller weights for
+    each shared label.
 
     This function assumes long-only normalized weights.
     """

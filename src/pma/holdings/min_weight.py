@@ -1,5 +1,5 @@
-def min_weight(portfolio_weights, include_zero_weights=False) -> float:
-    """Return the smallest portfolio weight.
+def min_weight(portfolio_weights, *, include_zero_weights=False) -> float:
+    """Return the smallest weight in a mapping.
 
     This function assumes long-only normalized weights.
     """
