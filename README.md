@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-banner.png" width="700">
+  <img src="assets/logo-banner.png" width="500">
 </p>
 
 # py-pma
