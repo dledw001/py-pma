@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo-banner.png" width="700">
+</p>
+
 # py-pma
 A Python library for computing portfolio management analytics on normalized weight mappings.
 
